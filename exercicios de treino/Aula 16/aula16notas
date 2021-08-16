@@ -1,0 +1,41 @@
+'''Variaveis compostas! 
+em python são Tuplas;Listas;Dicionários.
+
+variaveis criam espaços na memoria, as tuplas vão possibilitar
+criar variaveis que recebem varios valores sem serem substituídos.
+srt = variaveis compostas (aula de analise de str)
+
+print(VARIAVEL [2])                   [] variavel de numero 2
+
+print(VARIAVEL [0:2])                [] fatiamento (ultimo elemento ignorado) 0-3
+
+print(VARIAVEL [1:])                 [] todas variaveis partindo excluindo 0
+print(VARIAVEL [-1])                 [] ultimo elemento
+
+len - > cumprimento => len(lanche) isso me da a quantidade de variaveis
+
+for C in LANCHE:                   python cria uma variavel simples 
+    print (C)                        e vai imprimir todas as variaveis até o fim
+
+               ####TUPLAS SÃO IMUTÁVEIS##### '''
+
+#lanche = () [] {}               tupla, lista e dicionario
+
+lanche = ('hamburguer', 'suco', 'pizza', 'pudim')   #funicona sem parenteses 
+for cont in range(0, len(lanche)):
+    print(f'temos {lanche[cont]} na posição {cont}')
+                                ####### MESMA COISA##########
+for comida in lanche:
+    print(f'temos {comida}', end=' ') #NÃO MOSTRA A POSIÇÃO
+#print(lanche[-1:])          #de trás para frente
+
+####para posição sem range:
+for pos, comida in enumerate(lanche):
+    print(f'temos {comida} na posição {pos}')
+
+print(sorted(lanche)) #ordenado coloca a tupla em ordem sorted
+'''É POSSÍVEL ADCIONAR UMA TUPLA NA OUTRA. COMO UMA LISTA. E TAMBÉM CONTAR A REPETIÇÃO ##.count###
+.index é pra saber em que posição se encontra tal variavel da tupla (primeira ocorrencia)
+del é um comando para apagar toda a tupla
+
+
